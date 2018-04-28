@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BRGCP_Persona.cs" />
     <Compile Include="BRGPP_Portafolio.cs" />
     <Compile Include="BRGPP_Proyecto.cs" />
     <Compile Include="BRGR_Requerimiento.cs" />
