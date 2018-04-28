@@ -21,7 +21,7 @@ namespace BusinessRules
             oda = new DAGCP01_RFC();
         }
         /// <summary>
-        /// OBTENER LA LISTA DE LAS RFC
+        /// OBTENER LA LISTA DE LAS RFCS O UNA INDIVIDUAL
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
@@ -33,6 +33,21 @@ namespace BusinessRules
                 var iLst = oList;
                 ((IList)iLst).LoadFromReader<BEGCP01_RFC>(odr);
                 return (oList);
+            }
+        }
+        /// <summary>
+        /// OPERACIONES DE MANTENIMIENTO
+        /// </summary>
+        /// <param name="oBe"></param>
+        public void GCP0006_RFC(BEGCP01_RFC oBe)
+        {
+            try
+            {
+                oda.GCP0006_RFC(oBe);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

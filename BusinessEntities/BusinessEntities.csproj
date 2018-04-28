@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BEGCP01_RFC.cs" />
+    <Compile Include="BEGPP_Portafolio.cs" />
+    <Compile Include="BEGPP_Proyecto.cs" />
     <Compile Include="BEGR_Requerimiento.cs" />
-    <Compile Include="BEGR_TipoRecurso.cs" />
+    <Compile Include="BEGCP_TipoRecurso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

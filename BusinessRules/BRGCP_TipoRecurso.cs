@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessRules
 {
-    class BRGR_TipoRecurso
+    public class BRGCP_TipoRecurso
     {
     }
 }

@@ -93,6 +93,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\C0001RFCController.cs" />
     <Compile Include="Controllers\C0002RequerimientoController.cs" />
+    <Compile Include="Controllers\C0003PortafolioController.cs" />
+    <Compile Include="Controllers\C0004ProyectoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
