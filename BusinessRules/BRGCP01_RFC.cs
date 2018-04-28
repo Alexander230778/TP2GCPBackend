@@ -27,12 +27,19 @@ namespace BusinessRules
         /// <returns></returns>
         public List<BEGCP01_RFC> GCP0001_RFC_LIST(BEGCP01_RFC oBe)
         {
-            using (var odr = oda.GCP0001_RFC_LIST(oBe))
+            try
             {
-                var oList = new List<BEGCP01_RFC>();
-                var iLst = oList;
-                ((IList)iLst).LoadFromReader<BEGCP01_RFC>(odr);
-                return (oList);
+                using (var odr = oda.GCP0001_RFC_LIST(oBe))
+                {
+                    var oList = new List<BEGCP01_RFC>();
+                    var iLst = oList;
+                    ((IList)iLst).LoadFromReader<BEGCP01_RFC>(odr);
+                    return (oList);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
             }
         }
         /// <summary>

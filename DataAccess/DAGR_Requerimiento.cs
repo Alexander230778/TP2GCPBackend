@@ -19,9 +19,7 @@ namespace DataAccess
         /// </summary>
         public DAGR_Requerimiento()
         {
-            //DatabaseProviderFactory factory = new DatabaseProviderFactory();
             odb = DatabaseFactory.CreateDatabase("CN");
-            //odb = factory.Create("CN");
             ocn = odb.CreateConnection();
         }
         /// <summary>
@@ -38,6 +36,10 @@ namespace DataAccess
                 ocmd.CommandTimeout = 2000;
                 var odr = odb.ExecuteReader(ocmd);
                 return (odr);
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
             }
             finally
             {

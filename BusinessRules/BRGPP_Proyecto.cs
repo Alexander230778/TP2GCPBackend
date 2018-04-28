@@ -27,12 +27,19 @@ namespace BusinessRules
         /// <returns></returns>
         public List<BEGPP_Proyecto> GPP0005_GPP_Proyecto_LIST(BEGPP_Proyecto oBe)
         {
-            using (var odr = oda.GPP0005_GPP_Proyecto_LIST(oBe))
+            try
             {
-                var oList = new List<BEGPP_Proyecto>();
-                var iLst = oList;
-                ((IList)iLst).LoadFromReader<BEGPP_Proyecto>(odr);
-                return (oList);
+                using (var odr = oda.GPP0005_GPP_Proyecto_LIST(oBe))
+                {
+                    var oList = new List<BEGPP_Proyecto>();
+                    var iLst = oList;
+                    ((IList)iLst).LoadFromReader<BEGPP_Proyecto>(odr);
+                    return (oList);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
             }
         }
     }

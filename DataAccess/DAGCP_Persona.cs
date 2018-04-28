@@ -33,11 +33,15 @@ namespace DataAccess
             try
             {
                 if (ocn.State == ConnectionState.Closed) ocn.Open();
-                var ocmd = odb.GetStoredProcCommand("GCP0007_GCP_Persona_LIST", oBe.per_Codigo, 
+                var ocmd = odb.GetStoredProcCommand("GCP0007_GCP_Persona_LIST", oBe.per_Codigo,
                                                                                     oBe.acci);
                 ocmd.CommandTimeout = 2000;
                 var odr = odb.ExecuteReader(ocmd);
                 return (odr);
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
             }
             finally
             {

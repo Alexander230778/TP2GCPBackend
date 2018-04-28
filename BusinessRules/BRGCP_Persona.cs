@@ -28,12 +28,19 @@ namespace BusinessRules
         /// <returns></returns>
         public List<BEGCP_Persona> GCP0007_GCP_Persona_LIST(BEGCP_Persona oBe)
         {
-            using (var odr = oda.GCP0007_GCP_Persona_LIST(oBe))
+            try
             {
-                var oList = new List<BEGCP_Persona>();
-                var iLst = oList;
-                ((IList)iLst).LoadFromReader<BEGCP_Persona>(odr);
-                return (oList);
+                using (var odr = oda.GCP0007_GCP_Persona_LIST(oBe))
+                {
+                    var oList = new List<BEGCP_Persona>();
+                    var iLst = oList;
+                    ((IList)iLst).LoadFromReader<BEGCP_Persona>(odr);
+                    return (oList);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
             }
         }
     }

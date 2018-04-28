@@ -27,12 +27,19 @@ namespace BusinessRules
         /// <returns></returns>
         public List<BEGR_Requerimiento> GCP0002_GR_Requerimiento_LIST(BEGR_Requerimiento oBe)
         {
-            using (var odr = oda.GCP0002_GR_Requerimiento_LIST(oBe))
+            try
             {
-                var oList = new List<BEGR_Requerimiento>();
-                var iLst = oList;
-                ((IList)iLst).LoadFromReader<BEGR_Requerimiento>(odr);
-                return (oList);
+                using (var odr = oda.GCP0002_GR_Requerimiento_LIST(oBe))
+                {
+                    var oList = new List<BEGR_Requerimiento>();
+                    var iLst = oList;
+                    ((IList)iLst).LoadFromReader<BEGR_Requerimiento>(odr);
+                    return (oList);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
             }
         }
     }

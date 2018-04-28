@@ -39,6 +39,10 @@ namespace DataAccess
                 var odr = odb.ExecuteReader(ocmd);
                 return (odr);
             }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
+            }
             finally
             {
                 ocn.Close();
