@@ -12,4 +12,3 @@ C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.pdb
-C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache

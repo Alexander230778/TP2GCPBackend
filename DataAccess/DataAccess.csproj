@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAGCP01_RFC.cs" />
+    <Compile Include="DAGCP_Beneficio.cs" />
     <Compile Include="DAGCP_Persona.cs" />
     <Compile Include="DAGPP_Portafolio.cs" />
     <Compile Include="DAGPP_Proyecto.cs" />

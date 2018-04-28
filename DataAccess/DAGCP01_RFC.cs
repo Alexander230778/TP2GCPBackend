@@ -70,6 +70,19 @@ namespace DataAccess
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
+                        oBe.rfc_Codigo = Convert.ToInt32(odb.GetParameterValue(ocmd, "@rfc_Codigo"));
+
+                        DbCommand cmdo;
+
+                        oBe.bene_codigos.ForEach(obj =>
+                        {
+                            cmdo = odb.GetStoredProcCommand("GCP0009_BeneficioRFC", oBe.rfc_Codigo,
+                                                                                obj,
+                                                                                1);
+                            cmdo.CommandTimeout = 2000;
+                            odb.ExecuteNonQuery(cmdo, obts);
+                        });
+
                         obts.Commit();
                     }
                 }

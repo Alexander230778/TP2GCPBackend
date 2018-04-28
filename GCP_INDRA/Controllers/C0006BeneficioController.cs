@@ -1,34 +1,33 @@
-﻿using System;
+﻿using BusinessEntities;
+using BusinessRules;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using BusinessEntities;
-using BusinessRules;
 
 namespace GCP_INDRA.Controllers
 {
-    public class C0004ProyectoController : ApiController
+    public class C0006BeneficioController : ApiController
     {
         /// <summary>
-        /// OBTENER LA LISTA DE PROYECTOS
+        /// OBTENER LA LISTA DE BENEFICIOS
         /// </summary>
         /// <returns></returns>
-        [HttpPost]
-        [Route("C0004G0001")]
-        [EnableCors(origins: "*", headers: "*", methods: "POST")]
-        public HttpResponseMessage GPP0005_GPP_Proyecto_LIST(BEGPP_Proyecto oBe)
+        [HttpGet]
+        [Route("C0006G0001")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCP0008_Beneficio_LIST_0001()
         {
             try
             {
-                if (oBe == null)
-                    throw new ArgumentException("EL objeto de parametros es nulo.");
-                var oBr = new BRGPP_Proyecto();
+                var oBr = new BRGCP_Beneficio();
+                var oBe = new BEGCP_Beneficio();
                 oBe.acci = 1;
 
-                var oList = oBr.GPP0005_GPP_Proyecto_LIST(oBe);
+                var oList = oBr.GCP0008_Beneficio_LIST(oBe);
 
                 return Request.CreateResponse(HttpStatusCode.OK, oList);
             }

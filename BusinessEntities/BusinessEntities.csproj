@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BEGCP01_RFC.cs" />
+    <Compile Include="BEGCP_Beneficio.cs" />
     <Compile Include="BEGCP_Persona.cs" />
     <Compile Include="BEGPP_Portafolio.cs" />
     <Compile Include="BEGPP_Proyecto.cs" />

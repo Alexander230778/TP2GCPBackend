@@ -112,5 +112,38 @@ namespace GCP_INDRA.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+        /// <summary>
+        /// OBTENER UNA RFC PARA EDICIÓN
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("C0001G0005")]
+        [EnableCors(origins: "*", headers: "*", methods: "POST")]
+        public HttpResponseMessage GCP0001_RFC_LIST_0003(BEGCP01_RFC oBe)
+        {
+            try
+            {
+                var oBr = new BRGCP01_RFC();
+                var oBeR = new BEGCP_Beneficio();
+                var oBrR = new BRGCP_Beneficio();
+                oBe.acci = 2;
+                oBeR.acci = 2;
+                var oList = oBr.GCP0001_RFC_LIST(oBe);
+                oBeR.rfc_Codigo = oList[0].rfc_Codigo;
+                var oListR = oBrR.GCP0008_Beneficio_LIST(oBeR);
+                var oListCodigos = new List<int>();
+                var oBeReturn = oList[0];
+                oListR.ForEach(obj => {
+                    oBeReturn.bene_codigos.Add(obj.ben_Codigo);
+                });
+
+                return Request.CreateResponse(HttpStatusCode.OK, oBeReturn);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
     }
 }
