@@ -1,0 +1,4 @@
+D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\bin\Release\BusinessEntities.dll
+D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\bin\Release\BusinessEntities.pdb
+D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Release\BusinessEntities.dll
+D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Release\BusinessEntities.pdb
