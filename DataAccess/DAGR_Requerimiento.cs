@@ -24,6 +24,11 @@ namespace DataAccess
             //odb = factory.Create("CN");
             ocn = odb.CreateConnection();
         }
+        /// <summary>
+        /// OTENER LA LISTA DE REQUERIMIENTOS DEL PROYECTO
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
         public IDataReader GCP0002_GR_Requerimiento_LIST(BEGR_Requerimiento oBe)
         {
             try

@@ -21,7 +21,7 @@ namespace BusinessRules
             oda = new DAGR_Requerimiento();
         }
         /// <summary>
-        /// OBTENER LA LISTA DE LAS RFC
+        /// OBTENER LA LISTA DE LOS REQUERIMIENTOS DEL PROYECTO
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
