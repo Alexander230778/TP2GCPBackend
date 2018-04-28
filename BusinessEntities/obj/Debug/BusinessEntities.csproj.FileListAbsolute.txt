@@ -8,3 +8,8 @@ D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\bin\Debug\BusinessEntit
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Debug\BusinessEntities.dll
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
+C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.pdb
