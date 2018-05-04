@@ -73,6 +73,7 @@
     <Compile Include="DAGCP_Beneficio.cs" />
     <Compile Include="DAGCP_Persona.cs" />
     <Compile Include="DAGPP_Portafolio.cs" />
+    <Compile Include="DAGCP_TipoRecurso.cs" />
     <Compile Include="DAGPP_Proyecto.cs" />
     <Compile Include="DAGR_Requerimiento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

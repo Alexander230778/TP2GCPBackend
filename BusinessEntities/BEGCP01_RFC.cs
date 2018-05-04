@@ -28,6 +28,8 @@ namespace BusinessEntities
         public string por_Nombre { get; set; }
         public string per_Nombre { get; set; }
         public string per_Email { get; set; }
+        public int NumPortafolio { get; set; }
+        public string rfc_StrFechaSolicitud { get; set; }
         public List<BEGR_Requerimiento> LST_REQU { get; set; }
         public List<BEGCP_Beneficio> LST_BENE { get; set; }
         public List<int> bene_codigos { get; set; }

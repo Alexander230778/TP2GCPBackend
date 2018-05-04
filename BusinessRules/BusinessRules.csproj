@@ -48,10 +48,10 @@
     <Compile Include="BRGCP_Beneficio.cs" />
     <Compile Include="BRGCP_Persona.cs" />
     <Compile Include="BRGPP_Portafolio.cs" />
+    <Compile Include="BRGCP_TipoRecurso.cs" />
     <Compile Include="BRGPP_Proyecto.cs" />
     <Compile Include="BRGR_Requerimiento.cs" />
     <Compile Include="BRGCP01_RFC.cs" />
-    <Compile Include="BRGCP_TipoRecurso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

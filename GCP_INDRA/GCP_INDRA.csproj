@@ -94,6 +94,7 @@
     <Compile Include="Controllers\C0001RFCController.cs" />
     <Compile Include="Controllers\C0002RequerimientoController.cs" />
     <Compile Include="Controllers\C0003PortafolioController.cs" />
+    <Compile Include="Controllers\C0007TipoRecursoController.cs" />
     <Compile Include="Controllers\C0004ProyectoController.cs" />
     <Compile Include="Controllers\C0005PersonaController.cs" />
     <Compile Include="Controllers\C0006BeneficioController.cs" />
