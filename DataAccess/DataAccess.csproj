@@ -71,9 +71,13 @@
   <ItemGroup>
     <Compile Include="DAGCP01_RFC.cs" />
     <Compile Include="DAGCP_Beneficio.cs" />
+    <Compile Include="DAGCP_EstadoRiesgo.cs" />
+    <Compile Include="DAGCP_EvaluacionRiesgo.cs" />
     <Compile Include="DAGCP_Persona.cs" />
+    <Compile Include="DAGCP_ImpactoRiesgo.cs" />
     <Compile Include="DAGPP_Portafolio.cs" />
     <Compile Include="DAGCP_TipoRecurso.cs" />
+    <Compile Include="DAGenericInfoRequest.cs" />
     <Compile Include="DAGPP_Proyecto.cs" />
     <Compile Include="DAGR_Requerimiento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

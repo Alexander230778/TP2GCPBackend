@@ -34,6 +34,11 @@ namespace BusinessRules
                     var oList = new List<BEGCP01_RFC>();
                     var iLst = oList;
                     ((IList)iLst).LoadFromReader<BEGCP01_RFC>(odr);
+                    var cont = 1;
+                    oList.ForEach(obj=> {
+                        obj.key = cont;
+                        cont++;
+                    });
                     return (oList);
                 }
             }

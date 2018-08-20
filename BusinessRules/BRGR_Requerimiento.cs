@@ -34,12 +34,32 @@ namespace BusinessRules
                     var oList = new List<BEGR_Requerimiento>();
                     var iLst = oList;
                     ((IList)iLst).LoadFromReader<BEGR_Requerimiento>(odr);
+                    var cont = 1;
+                    oList.ForEach(obj=> {
+                        obj.key = cont;
+                        cont++;
+                    });
                     return (oList);
                 }
             }
             catch (Exception ex)
             {
                 throw new ArgumentException(ex.Message);
+            }
+        }
+        /// <summary>
+        /// MANTENIMIENTO DE REQUERIMIENTO
+        /// </summary>
+        /// <param name="oBe"></param>
+        public void GCP0011_GR_Requerimiento(BEGR_Requerimiento oBe)
+        {
+            try
+            {
+                oda.GCP0011_GR_Requerimiento(oBe);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

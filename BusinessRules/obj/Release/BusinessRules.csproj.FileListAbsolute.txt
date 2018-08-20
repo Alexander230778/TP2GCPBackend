@@ -21,3 +21,4 @@ C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Release\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.pdb
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Release\Microsoft.Practices.ObjectBuilder2.dll

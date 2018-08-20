@@ -42,12 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BEGCP01_RFC.cs" />
+    <Compile Include="BEGCP19_TipoRequerimiento.cs" />
+    <Compile Include="BEGCP20_PriodidadRequerimiento.cs" />
+    <Compile Include="BEGCP9_Recurso.cs" />
     <Compile Include="BEGCP_Beneficio.cs" />
+    <Compile Include="BEGCP_EstadoRiesgo.cs" />
+    <Compile Include="BEGCP_EvaluacionRiesgo.cs" />
+    <Compile Include="BEGCP_ImpactoRiesgo.cs" />
     <Compile Include="BEGCP_Persona.cs" />
+    <Compile Include="BEGenericInfoRequest.cs" />
     <Compile Include="BEGPP_Portafolio.cs" />
     <Compile Include="BEGPP_Proyecto.cs" />
     <Compile Include="BEGR_Requerimiento.cs" />
     <Compile Include="BEGCP_TipoRecurso.cs" />
+    <Compile Include="BEGCP18_NivelDocumento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

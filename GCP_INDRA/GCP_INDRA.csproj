@@ -98,6 +98,10 @@
     <Compile Include="Controllers\C0004ProyectoController.cs" />
     <Compile Include="Controllers\C0005PersonaController.cs" />
     <Compile Include="Controllers\C0006BeneficioController.cs" />
+    <Compile Include="Controllers\C0008GenericInfoController.cs" />
+    <Compile Include="Controllers\C0011GCP_EvaluacionRiesgoController.cs" />
+    <Compile Include="Controllers\C0010GCP_EstadoRiesgoController.cs" />
+    <Compile Include="Controllers\C0009GCP_ImpactoRiesgoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

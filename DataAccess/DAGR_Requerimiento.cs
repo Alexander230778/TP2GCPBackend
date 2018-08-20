@@ -32,7 +32,7 @@ namespace DataAccess
             try
             {
                 if (ocn.State == ConnectionState.Closed) ocn.Open();
-                var ocmd = odb.GetStoredProcCommand("GCP0002_GR_Requerimiento_LIST", oBe.lir_Codigo, oBe.acci);
+                var ocmd = odb.GetStoredProcCommand("GCP0002_GR_Requerimiento_LIST",oBe.rfc_Codigo, oBe.lir_Codigo, oBe.acci);
                 ocmd.CommandTimeout = 2000;
                 var odr = odb.ExecuteReader(ocmd);
                 return (odr);
@@ -46,6 +46,59 @@ namespace DataAccess
                 ocn.Close();
             }
         }
+        /// <summary>
+        /// MANTENIMIENTO DE REQUERIMIENTO
+        /// </summary>
+        /// <param name="oBe"></param>
+        public void GCP0011_GR_Requerimiento(BEGR_Requerimiento oBe)
+        {
+            if (ocn.State == ConnectionState.Closed) ocn.Open();
+            using (var obts = ocn.BeginTransaction())
+            {
+                try
+                {
+                    using (var ocmd = odb.GetStoredProcCommand("GCP0011_GR_Requerimiento", oBe.lir_Codigo, 
+	                                                                                        oBe.lir_Nombre,
+	                                                                                        oBe.lir_Resumen,
+	                                                                                        oBe.lir_NivelDoc,
+	                                                                                        oBe.lir_TipoPublicacion,
+	                                                                                        oBe.lir_semanaMax,
+	                                                                                        oBe.lir_Presupuesto,
+	                                                                                        oBe.rfc_Codigo,
+	                                                                                        oBe.lir_Prioridad,
+                                                                                            oBe.acci))
+                    {
+                        ocmd.CommandTimeout = 2000;
+                        odb.ExecuteNonQuery(ocmd, obts);
+                        oBe.lir_Codigo = Convert.ToInt32(odb.GetParameterValue(ocmd, "@lir_Codigo"));
 
+                        DbCommand cmdo;
+
+                        oBe.LST_RECU.ForEach(obj =>
+                        {
+                            cmdo = odb.GetStoredProcCommand("GCP0013_Recurso", obj.rec_Cantidad,
+                                                                                obj.rec_Semanas,
+                                                                                obj.GCP09_Recurso_ID,
+                                                                                oBe.lir_Codigo,
+                                                                                obj.tip_Codigo,
+                                                                                1);
+                            cmdo.CommandTimeout = 2000;
+                            odb.ExecuteNonQuery(cmdo, obts);
+                        });
+
+                        obts.Commit();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    obts.Rollback();
+                    throw new Exception(ex.Message);
+                }
+                finally
+                {
+                    ocn.Close();
+                }
+            }
+        }
     }
 }

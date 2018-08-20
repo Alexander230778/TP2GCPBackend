@@ -11,9 +11,9 @@ namespace BusinessEntities
         public BEGCP01_RFC()
         {
             LST_REQU = new List<BEGR_Requerimiento>();
-            LST_BENE = new List<BEGCP_Beneficio>();
             bene_codigos = new List<int>();
         }
+        public int key { get; set; }
         public int rfc_Codigo { get; set; }
         public DateTime rfc_FechaSolicitud { get; set; }
         public int rfc_NivelImpacto { get; set; }
@@ -31,7 +31,6 @@ namespace BusinessEntities
         public int NumPortafolio { get; set; }
         public string rfc_StrFechaSolicitud { get; set; }
         public List<BEGR_Requerimiento> LST_REQU { get; set; }
-        public List<BEGCP_Beneficio> LST_BENE { get; set; }
         public List<int> bene_codigos { get; set; }
         public int acci { get; set; }
     }

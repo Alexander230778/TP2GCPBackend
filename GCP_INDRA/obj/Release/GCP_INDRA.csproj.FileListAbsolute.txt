@@ -50,3 +50,4 @@ C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.pdb
+C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\Microsoft.Practices.ObjectBuilder2.dll

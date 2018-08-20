@@ -29,6 +29,7 @@ C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\DataAccess.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.csprojResolveAssemblyReference.cache
