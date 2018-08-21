@@ -48,5 +48,25 @@ namespace DataAccess
                 ocn.Close();
             }
         }
+
+        public IDataReader GCPP0016_LiderTecnico_LIST()
+        {
+            try
+            {
+                if (ocn.State == ConnectionState.Closed) ocn.Open();
+                var ocmd = odb.GetStoredProcCommand("GCPP0016_LiderTecnico_LIST");
+                ocmd.CommandTimeout = 2000;
+                var odr = odb.ExecuteReader(ocmd);
+                return (odr);
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
+            }
+            finally
+            {
+                ocn.Close();
+            }
+        }
     }
 }

@@ -43,20 +43,36 @@ namespace GCP_INDRA.Controllers
         /// <param name="oBe"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("C0002S0002")]
+        [Route("Requerimiento")]
         [EnableCors(origins: "*", headers: "*", methods: "POST")]
-        public HttpResponseMessage GCP0011_GR_Requerimiento_0001(BEGR_Requerimiento oBe)
+        public HttpResponseMessage GCP0011_GR_Requerimiento_0001(requerimentRequest oBe)
         {
+            var oBeResponse = new requirementResponse();
             try
             {
                 var oBr = new BRGR_Requerimiento();
-                oBe.acci = 1;
-                oBr.GCP0011_GR_Requerimiento(oBe);
-                return Request.CreateResponse(HttpStatusCode.OK, "OK");
+                var oBeSend = new BEGR_Requerimiento();
+                oBeSend.acci = 1;
+
+                oBeSend.lir_Nombre = oBe.title;
+                oBeSend.lir_FechaEntrega = oBe.delivery;
+                oBeSend.lir_Resumen = oBe.description;
+                oBeSend.lir_Prioridad = oBe.prioridad;
+                oBeSend.lir_EsFuncional = oBe.isFunctional;
+                oBeSend.lir_RequiereDocumentar = oBe.requireDocumentation;
+
+                oBr.GCP0011_GR_Requerimiento(oBeSend);
+
+                oBeResponse.success = true;
+                oBeResponse.data = oBeSend;
+                oBeResponse.message = "";
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
             }
             catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+                oBeResponse.success = false;
+                oBeResponse.message = ex.Message;
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
             }
         }
         /// <summary>
@@ -65,7 +81,7 @@ namespace GCP_INDRA.Controllers
         /// <param name="oBe"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("C0002S0003")]
+        [Route("Requerimiento/Update")]
         [EnableCors(origins: "*", headers: "*", methods: "POST")]
         public HttpResponseMessage GCP0011_GR_Requerimiento_0002(BEGR_Requerimiento oBe)
         {
@@ -86,14 +102,16 @@ namespace GCP_INDRA.Controllers
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
-        [HttpPost]
-        [Route("C0002G0004")]
-        [EnableCors(origins: "*", headers: "*", methods: "POST")]
-        public HttpResponseMessage GCP0002_GR_Requerimiento_LIST_0002(BEGR_Requerimiento oBe)
+        [HttpGet]
+        [Route("Rfc/{idRfc}/nuevosRequerimientos")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCP0002_GR_Requerimiento_LIST_0002(int idRfc)
         {
             try
             {
                 var oBr = new BRGR_Requerimiento();
+                var oBe = new BEGR_Requerimiento();
+                oBe.rfc_Codigo = idRfc;
                 oBe.acci = 2;
 
                 var oList = oBr.GCP0002_GR_Requerimiento_LIST(oBe);

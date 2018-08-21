@@ -17,15 +17,29 @@ namespace BusinessEntities
         public int rfc_Codigo { get; set; }
         public string lir_Nombre { get; set; }
         public string lir_Resumen { get; set; }
-        public DateTime lir_Fecha { get; set; }
-        public int lir_NivelDoc { get; set; }
-        public int lir_TipoPublicacion { get; set; }
-        public string lir_semanaMax { get; set; }
-        public decimal lir_Presupuesto { get; set; }
+        public DateTime lir_FechaCreacion { get; set; }
+        public string lir_FechaEntrega { get; set; }
+        public bool lir_EsFuncional { get; set; }
+        public bool lir_RequiereDocumentar { get; set; }
         public int GPP_Proyecto_pro_Codigo { get; set; }
         public string est_Estado { get; set; }
         public int lir_Prioridad { get; set; }
         public List<BEGCP9_Recurso> LST_RECU { get; set; }
         public int acci { get; set; }
+    }
+    public class requerimentRequest
+    {
+        public string title { get; set; }
+        public string delivery { get; set; }
+        public string description { get; set; }
+        public int prioridad { get; set; }
+        public bool isFunctional { get; set; }
+        public bool requireDocumentation { get; set; }
+    }
+    public class requirementResponse
+    {
+        public bool success { get; set; }
+        public BEGR_Requerimiento data { get; set; }
+        public string message { get; set; }
     }
 }

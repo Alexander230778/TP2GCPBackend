@@ -57,15 +57,15 @@ namespace DataAccess
             {
                 try
                 {
-                    using (var ocmd = odb.GetStoredProcCommand("GCPP0014_GCP_EvaluacionRiesgo", oBe.evt_Codigo,
-                                                                                                oBe.erv_Requiere,
-                                                                                                oBe.erv_Estado,
+                    using (var ocmd = odb.GetStoredProcCommand("GCPP0014_GCP_EvaluacionRiesgo", oBe.evr_Codigo,
+                                                                                                oBe.evr_Requiere,
+                                                                                                oBe.evr_Estado,
                                                                                                 oBe.rfc_Codigo,
                                                                                                 oBe.acci))
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
-                        oBe.evt_Codigo = Convert.ToInt32(odb.GetParameterValue(ocmd, "@evt_Codigo"));
+                        oBe.evr_Codigo = Convert.ToInt32(odb.GetParameterValue(ocmd, "@evr_Codigo"));
 
                         obts.Commit();
                     }

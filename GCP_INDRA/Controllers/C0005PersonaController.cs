@@ -58,5 +58,27 @@ namespace GCP_INDRA.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+        /// <summary>
+        /// OBTENER LA LISTA DE LÍDERES TÉCNICOS
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("LiderTecnico")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCPP0016_LiderTecnico_LIST()
+        {
+            try
+            {
+                var oBr = new BRGCP_Persona();
+
+                var oList = oBr.GCPP0016_LiderTecnico_LIST();
+
+                return Request.CreateResponse(HttpStatusCode.OK, oList);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
     }
 }

@@ -20,12 +20,10 @@ namespace GCP_INDRA.Controllers
             try
             {
                 var oBr = new BRGCP_EvaluacionRiesgo();
-
+                oBe.acci = 1;
                 oBr.GCPP0014_GCP_EvaluacionRiesgo(oBe);
 
-                var oList = oBr.GCPP0015_GCP_EvaluacionRiesgo_LIST(oBe);
-
-                return Request.CreateResponse(HttpStatusCode.OK, oList);
+                return Request.CreateResponse(HttpStatusCode.OK, oBe);
             }
             catch (Exception ex)
             {

@@ -43,5 +43,27 @@ namespace BusinessRules
                 throw new ArgumentException(ex.Message);
             }
         }
+        /// <summary>
+        /// OBTENER LA LISTA DE LIDERES TÉCNICOS
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
+        public List<BEGCP_Persona> GCPP0016_LiderTecnico_LIST()
+        {
+            try
+            {
+                using (var odr = oda.GCPP0016_LiderTecnico_LIST())
+                {
+                    var oList = new List<BEGCP_Persona>();
+                    var iLst = oList;
+                    ((IList)iLst).LoadFromReader<BEGCP_Persona>(odr);
+                    return (oList);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
+            }
+        }
     }
 }

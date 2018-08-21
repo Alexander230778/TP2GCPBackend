@@ -57,34 +57,20 @@ namespace DataAccess
             {
                 try
                 {
-                    using (var ocmd = odb.GetStoredProcCommand("GCP0011_GR_Requerimiento", oBe.lir_Codigo, 
-	                                                                                        oBe.lir_Nombre,
-	                                                                                        oBe.lir_Resumen,
-	                                                                                        oBe.lir_NivelDoc,
-	                                                                                        oBe.lir_TipoPublicacion,
-	                                                                                        oBe.lir_semanaMax,
-	                                                                                        oBe.lir_Presupuesto,
-	                                                                                        oBe.rfc_Codigo,
-	                                                                                        oBe.lir_Prioridad,
+                    using (var ocmd = odb.GetStoredProcCommand("GCP0011_GR_Requerimiento", oBe.lir_Codigo,
+                                                                                            oBe.lir_Nombre,
+                                                                                            oBe.lir_Resumen,
+                                                                                            oBe.lir_FechaEntrega,
+                                                                                            oBe.lir_EsFuncional,
+                                                                                            oBe.lir_RequiereDocumentar,
+                                                                                            oBe.rfc_Codigo,
+                                                                                            oBe.lir_Prioridad,
                                                                                             oBe.acci))
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
                         oBe.lir_Codigo = Convert.ToInt32(odb.GetParameterValue(ocmd, "@lir_Codigo"));
-
-                        DbCommand cmdo;
-
-                        oBe.LST_RECU.ForEach(obj =>
-                        {
-                            cmdo = odb.GetStoredProcCommand("GCP0013_Recurso", obj.rec_Cantidad,
-                                                                                obj.rec_Semanas,
-                                                                                obj.GCP09_Recurso_ID,
-                                                                                oBe.lir_Codigo,
-                                                                                obj.tip_Codigo,
-                                                                                1);
-                            cmdo.CommandTimeout = 2000;
-                            odb.ExecuteNonQuery(cmdo, obts);
-                        });
+                        oBe.lir_FechaEntrega = Convert.ToString(odb.GetParameterValue(ocmd, "@lir_FechaEntrega"));
 
                         obts.Commit();
                     }
