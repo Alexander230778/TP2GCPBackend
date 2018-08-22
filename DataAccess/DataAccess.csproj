@@ -73,6 +73,7 @@
     <Compile Include="DAGCP_Beneficio.cs" />
     <Compile Include="DAGCP_EstadoRiesgo.cs" />
     <Compile Include="DAGCP_EvaluacionRiesgo.cs" />
+    <Compile Include="DAGCP_PrioridadRiesgo.cs" />
     <Compile Include="DAGCP_Persona.cs" />
     <Compile Include="DAGCP_ImpactoRiesgo.cs" />
     <Compile Include="DAGPP_Portafolio.cs" />

@@ -61,6 +61,8 @@ namespace DataAccess
                                                                                                 oBe.evr_Requiere,
                                                                                                 oBe.evr_Estado,
                                                                                                 oBe.rfc_Codigo,
+                                                                                                oBe.evr_Observacion,
+                                                                                                oBe.pri_Codigo,
                                                                                                 oBe.acci))
                     {
                         ocmd.CommandTimeout = 2000;

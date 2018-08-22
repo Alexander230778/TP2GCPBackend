@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="BRGCP_Beneficio.cs" />
     <Compile Include="BRGCP_EstadoRiesgo.cs" />
+    <Compile Include="BRGCP_PrioridadRiesgo.cs" />
     <Compile Include="BRGCP_Persona.cs" />
     <Compile Include="BRGCP_ImpactoRiesgo.cs" />
     <Compile Include="BRGPP_Portafolio.cs" />

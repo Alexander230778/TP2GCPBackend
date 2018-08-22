@@ -51,7 +51,6 @@ D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\DataAccess.pdb
 D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\obj\Debug\GCP_INDRA.csprojResolveAssemblyReference.cache
 D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\obj\Debug\GCP_INDRA.dll
 D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\obj\Debug\GCP_INDRA.pdb
-C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Debug\GCP_INDRA.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.dll.config
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.pdb
@@ -76,5 +75,6 @@ C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.xml
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.Cors.xml
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.WebHost.xml
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\DataAccess.pdb
+C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Debug\GCP_INDRA.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Debug\GCP_INDRA.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Debug\GCP_INDRA.pdb
