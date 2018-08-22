@@ -35,6 +35,7 @@ namespace BusinessEntities
         public int prioridad { get; set; }
         public bool isFunctional { get; set; }
         public bool requireDocumentation { get; set; }
+        public int rfc_Codigo { get; set; }
     }
     public class requirementResponse
     {

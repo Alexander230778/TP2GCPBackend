@@ -34,10 +34,8 @@ namespace BusinessRules
                     var oList = new List<BEGR_Requerimiento>();
                     var iLst = oList;
                     ((IList)iLst).LoadFromReader<BEGR_Requerimiento>(odr);
-                    var cont = 1;
                     oList.ForEach(obj=> {
-                        obj.key = cont;
-                        cont++;
+                        obj.key = obj.lir_Codigo;
                     });
                     return (oList);
                 }

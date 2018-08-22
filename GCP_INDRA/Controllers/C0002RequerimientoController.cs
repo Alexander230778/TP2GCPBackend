@@ -60,8 +60,11 @@ namespace GCP_INDRA.Controllers
                 oBeSend.lir_Prioridad = oBe.prioridad;
                 oBeSend.lir_EsFuncional = oBe.isFunctional;
                 oBeSend.lir_RequiereDocumentar = oBe.requireDocumentation;
+                oBeSend.rfc_Codigo = oBe.rfc_Codigo;
 
                 oBr.GCP0011_GR_Requerimiento(oBeSend);
+
+                oBeSend.key = oBeSend.lir_Codigo;
 
                 oBeResponse.success = true;
                 oBeResponse.data = oBeSend;
