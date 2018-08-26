@@ -17,6 +17,7 @@ namespace BusinessEntities
         public string evr_Impacto { get; set; }
         public string evr_Adjunto { get; set; }
         public int rfc_Codigo { get; set; }
+        //Nuevos campos
         public int pri_Codigo { get; set; }
         public string evr_Observacion { get; set; }
         public int acci { get; set; }
