@@ -20,7 +20,11 @@ namespace BusinessRules
         {
             oda = new DAGCP_EvaluacionRiesgo();
         }
-
+        /// <summary>
+        /// OBTENER LA LISTA DE REQUERIMIENTOS DEL PROYECTO
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
         public List<BEGCP_EvaluacionRiesgo> GCPP0015_GCP_EvaluacionRiesgo_LIST(BEGCP_EvaluacionRiesgo oBe)
         {
             try
@@ -38,7 +42,10 @@ namespace BusinessRules
                 throw new ArgumentException(ex.Message);
             }
         }
-
+        /// <summary>
+        /// MANTENIMIENTO DE EVALUACIÓN DE RIESGO
+        /// </summary>
+        /// <param name="oBe"></param>
         public void GCPP0014_GCP_EvaluacionRiesgo(BEGCP_EvaluacionRiesgo oBe)
         {
             try

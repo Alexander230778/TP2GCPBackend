@@ -23,7 +23,7 @@ namespace DataAccess
             ocn = odb.CreateConnection();
         }
         /// <summary>
-        /// OTENER LA LISTA DE REQUERIMIENTOS DEL PROYECTO
+        /// OBTENER LA LISTA DE REQUERIMIENTOS DEL PROYECTO
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
@@ -57,13 +57,16 @@ namespace DataAccess
             {
                 try
                 {
-                    using (var ocmd = odb.GetStoredProcCommand("GCPP0014_GCP_EvaluacionRiesgo", oBe.evr_Codigo,
-                                                                                                oBe.evr_Requiere,
-                                                                                                oBe.evr_Estado,
-                                                                                                oBe.rfc_Codigo,
-                                                                                                oBe.evr_Observacion,
-                                                                                                oBe.pri_Codigo,
-                                                                                                oBe.acci))
+                    using (var ocmd = odb.GetStoredProcCommand("GCPP0014_GCP_EvaluacionRiesgo", oBe.acci,
+                        oBe.rfc_Codigo,
+                        oBe.evr_Requiere,
+                        oBe.pri_Codigo,
+                        oBe.evr_Observacion,
+                        oBe.evr_Codigo,
+                        oBe.esr_Codigo,
+                        oBe.evr_Informe,
+                        oBe.imp_Codigo,
+                        oBe.evr_Adjunto))
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);

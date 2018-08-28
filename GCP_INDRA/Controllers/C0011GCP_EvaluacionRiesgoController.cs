@@ -12,10 +12,30 @@ namespace GCP_INDRA.Controllers
 {
     public class C0011GCP_EvaluacionRiesgoController : ApiController
     {
+        [HttpGet]
+        [Route("EvaluacionRiesgo/{id}")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCPP0015_GCP_EvaluacionRiesgo_LIST(int id)
+        {
+            try
+            {
+                var oBr = new BRGCP_EvaluacionRiesgo();
+                var oBe = new BEGCP_EvaluacionRiesgo();
+                oBe.rfc_Codigo = id;
+
+                var oList = oBr.GCPP0015_GCP_EvaluacionRiesgo_LIST(oBe);
+
+                return Request.CreateResponse(HttpStatusCode.OK, oList);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
         [HttpPost]
         [Route("EvaluacionRiesgo")]
         [EnableCors(origins: "*", headers: "*", methods: "POST")]
-        public HttpResponseMessage GCPP0007_GCP_EstadoRiesgo_LIST(BEGCP_EvaluacionRiesgo oBe)
+        public HttpResponseMessage GCPP0014_GCP_EvaluacionRiesgo(BEGCP_EvaluacionRiesgo oBe)
         {
             try
             {
@@ -30,20 +50,18 @@ namespace GCP_INDRA.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
-        [HttpGet]
-        [Route("EvaluacionRiesgo/{id}")]
-        [EnableCors(origins: "*", headers: "*", methods: "GET")]
-        public HttpResponseMessage GCPP0007_GCP_EstadoRiesgo_LIST(int id)
+        [HttpPost]
+        [Route("EvaluacionRiesgoU")]
+        [EnableCors(origins: "*", headers: "*", methods: "POST")]
+        public HttpResponseMessage GCPP0014_GCP_EvaluacionRiesgoU(BEGCP_EvaluacionRiesgo oBe)
         {
             try
             {
                 var oBr = new BRGCP_EvaluacionRiesgo();
-                var oBe = new BEGCP_EvaluacionRiesgo();
-                oBe.rfc_Codigo = id;
+                oBe.acci = 1;
+                oBr.GCPP0014_GCP_EvaluacionRiesgo(oBe);
 
-                var oList = oBr.GCPP0015_GCP_EvaluacionRiesgo_LIST(oBe);
-
-                return Request.CreateResponse(HttpStatusCode.OK, oList);
+                return Request.CreateResponse(HttpStatusCode.OK, oBe);
             }
             catch (Exception ex)
             {
