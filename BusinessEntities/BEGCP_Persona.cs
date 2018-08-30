@@ -8,7 +8,6 @@ namespace BusinessEntities
 {
     public class BEGCP_Persona
     {
-        public int lit_Codigo { get; set; }
         public int per_Codigo { get; set; }
         public string per_Nombre { get; set; }
         public string per_Email { get; set; }

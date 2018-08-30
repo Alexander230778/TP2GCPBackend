@@ -15,10 +15,11 @@ namespace GCP_INDRA.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("C0005G0001")]
+        [Route("Interesado")]
         [EnableCors(origins: "*", headers: "*", methods: "GET")]
         public HttpResponseMessage GCP0007_GCP_Persona_LIST_0001()
         {
+            //C0005G0001 - Interesado
             try
             {
                 var oBr = new BRGCP_Persona();
@@ -39,10 +40,11 @@ namespace GCP_INDRA.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("C0005G0002")]
+        [Route("Responsable")]
         [EnableCors(origins: "*", headers: "*", methods: "GET")]
         public HttpResponseMessage GCP0007_GCP_Persona_LIST_0002()
         {
+            //C0005G0002 - Responsable
             try
             {
                 var oBr = new BRGCP_Persona();
@@ -59,19 +61,45 @@ namespace GCP_INDRA.Controllers
             }
         }
         /// <summary>
-        /// OBTENER LA LISTA DE LÍDERES TÉCNICOS
+        /// OBTENER LA LISTA DE LIDERES TECNICOS
         /// </summary>
         /// <returns></returns>
         [HttpGet]
         [Route("LiderTecnico")]
         [EnableCors(origins: "*", headers: "*", methods: "GET")]
-        public HttpResponseMessage GCPP0016_LiderTecnico_LIST()
+        public HttpResponseMessage GCP0007_GCP_Persona_LIST_0003()
         {
             try
             {
                 var oBr = new BRGCP_Persona();
+                var oBe = new BEGCP_Persona();
+                oBe.acci = 3;
 
-                var oList = oBr.GCPP0016_LiderTecnico_LIST();
+                var oList = oBr.GCP0007_GCP_Persona_LIST(oBe);
+
+                return Request.CreateResponse(HttpStatusCode.OK, oList);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        /// <summary>
+        /// OBTENER LA LISTA DE PARTICIPANTES
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("Participante")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCP0007_GCP_Persona_LIST_0004()
+        {
+            try
+            {
+                var oBr = new BRGCP_Persona();
+                var oBe = new BEGCP_Persona();
+                oBe.acci = 4;
+
+                var oList = oBr.GCP0007_GCP_Persona_LIST(oBe);
 
                 return Request.CreateResponse(HttpStatusCode.OK, oList);
             }

@@ -23,8 +23,8 @@ namespace DataAccess
             ocn = odb.CreateConnection();
         }
         /// <summary>
-        /// OBTENER LS LISTA DE PERSONAS
-        /// INTERESADOS O RESPONSABLES
+        /// OBTENER LA LISTA DE PERSONAS
+        /// INTERESADOS, RESPONSABLES, LIDERES TECNICOS, PARTICIPANTES
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
@@ -35,26 +35,6 @@ namespace DataAccess
                 if (ocn.State == ConnectionState.Closed) ocn.Open();
                 var ocmd = odb.GetStoredProcCommand("GCP0007_GCP_Persona_LIST", oBe.per_Codigo,
                                                                                     oBe.acci);
-                ocmd.CommandTimeout = 2000;
-                var odr = odb.ExecuteReader(ocmd);
-                return (odr);
-            }
-            catch (Exception ex)
-            {
-                throw new ArgumentException(ex.Message);
-            }
-            finally
-            {
-                ocn.Close();
-            }
-        }
-
-        public IDataReader GCPP0016_LiderTecnico_LIST()
-        {
-            try
-            {
-                if (ocn.State == ConnectionState.Closed) ocn.Open();
-                var ocmd = odb.GetStoredProcCommand("GCPP0016_LiderTecnico_LIST");
                 ocmd.CommandTimeout = 2000;
                 var odr = odb.ExecuteReader(ocmd);
                 return (odr);
