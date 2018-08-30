@@ -6,3 +6,4 @@ C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.pdb
+C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.csprojResolveAssemblyReference.cache

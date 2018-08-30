@@ -59,6 +59,10 @@
       <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.2008.4.1\lib\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ResultSetMappers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ResultSetMappers.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -76,6 +80,7 @@
     <Compile Include="DAGCP_PrioridadRiesgo.cs" />
     <Compile Include="DAGCP_Persona.cs" />
     <Compile Include="DAGCP_ImpactoRiesgo.cs" />
+    <Compile Include="DAGCP_Reunion.cs" />
     <Compile Include="DAGPP_Portafolio.cs" />
     <Compile Include="DAGCP_TipoRecurso.cs" />
     <Compile Include="DAGenericInfoRequest.cs" />

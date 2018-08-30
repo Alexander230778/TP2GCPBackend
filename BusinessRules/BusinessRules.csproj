@@ -50,6 +50,7 @@
     <Compile Include="BRGCP_PrioridadRiesgo.cs" />
     <Compile Include="BRGCP_Persona.cs" />
     <Compile Include="BRGCP_ImpactoRiesgo.cs" />
+    <Compile Include="BRGCP_Reunion.cs" />
     <Compile Include="BRGPP_Portafolio.cs" />
     <Compile Include="BRGCP_TipoRecurso.cs" />
     <Compile Include="BRGenericInfoRequest.cs" />

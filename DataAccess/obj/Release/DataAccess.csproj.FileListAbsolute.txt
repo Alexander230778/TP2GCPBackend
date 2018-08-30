@@ -26,3 +26,4 @@ C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Release\DataAccess.dll
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Release\DataAccess.pdb
+C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\ResultSetMappers.dll

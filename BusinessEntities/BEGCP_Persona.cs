@@ -13,6 +13,7 @@ namespace BusinessEntities
         public string per_Email { get; set; }
         public int value { get; set; }
         public string text { get; set; }
+        public string per_Cargo { get; set; }
         public int acci { get; set; }
     }
 }

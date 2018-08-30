@@ -51,6 +51,8 @@
     <Compile Include="BEGCP_ImpactoRiesgo.cs" />
     <Compile Include="BEGCP_Persona.cs" />
     <Compile Include="BEGCP_PrioridadRiesgo.cs" />
+    <Compile Include="BEGCP_Reunion.cs" />
+    <Compile Include="BEGCP_ReunionParticipante.cs" />
     <Compile Include="BEGenericInfoRequest.cs" />
     <Compile Include="BEGPP_Portafolio.cs" />
     <Compile Include="BEGPP_Proyecto.cs" />

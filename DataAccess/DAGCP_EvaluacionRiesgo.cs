@@ -23,7 +23,7 @@ namespace DataAccess
             ocn = odb.CreateConnection();
         }
         /// <summary>
-        /// OBTENER LA LISTA DE REQUERIMIENTOS DEL PROYECTO
+        /// OBTENER LA LISTA DE EVALUACION DE RIESGO DEL PROYECTO
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
@@ -47,7 +47,7 @@ namespace DataAccess
             }
         }
         /// <summary>
-        /// MANTENIMIENTO DE EVALUACIÓN DE RIESGO
+        /// MANTENIMIENTO DE EVALUACION DE RIESGO
         /// </summary>
         /// <param name="oBe"></param>
         public void GCPP0014_GCP_EvaluacionRiesgo(BEGCP_EvaluacionRiesgo oBe)

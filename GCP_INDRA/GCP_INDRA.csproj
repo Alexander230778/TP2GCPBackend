@@ -103,6 +103,7 @@
     <Compile Include="Controllers\C0010GCP_EstadoRiesgoController.cs" />
     <Compile Include="Controllers\C0009GCP_ImpactoRiesgoController.cs" />
     <Compile Include="Controllers\C0012GCP_PrioridadRiesgoController.cs" />
+    <Compile Include="Controllers\C0013GCP_ReunionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
