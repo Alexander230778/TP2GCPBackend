@@ -1,0 +1,61 @@
+31/08/2018 - ALP
+Case: ASP.NET Web API: Passing Multiple Objects as an Input Parameters to Action Method
+URL: https://www.dotnetcurry.com/aspnet/1278/aspnet-webapi-pass-multiple-parameters-action-method
+Entities:
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+namespace WEBAPI_MultipleParameters.Models
+{
+    public class Order
+    {
+        [Key]
+        public int OrderId { get; set; }
+        public string CustomerName { get; set; }
+        public ICollection<ItemDetails> Details { get; set; }
+    }
+ 
+    public class ItemDetails
+    {
+        [Key]
+        public int ItemId { get; set; }
+        public string ItemName { get; set; }
+        public int Quantity { get; set; }
+        public int UnitPrice { get; set; }
+        public int OrderId { get; set; }
+        public Order Order { get; set; }
+    }
+}
+Models:
+public DbSet<Order> Orders { get; set; }
+public DbSet<ItemDetails> ItemDetails { get; set; }
+Controller:
+public IHttpActionResult Post(Order order, ItemDetails [] details)
+{
+    Order ord = order;
+    var ordDetails = details;
+    return Ok();
+}
+Request Body:
+{
+order:{CustomerName:'MS'},
+itemDetails:[
+  {ItemName:'I1',Quantity:100,UnitPrice:1000,OrderId:1},
+  {ItemName:'I1',Quantity:100,UnitPrice:1000,OrderId:1}
+]
+}
+Error:
+500 Internal Server Error - Can not bind multiple parameters
+Approach1: Using ViewModel Object
+public class OrderItemDetailsViewModel
+{
+    public Order order { get; set; }
+    public ItemDetails[] itemDetails { get; set; }
+}
+public IHttpActionResult Post(OrderItemDetailsViewModel orderInfo)
+{
+    Order ord = orderInfo.order;
+    var ordDetails = orderInfo.itemDetails;
+    return Ok();
+}
+Approach 2: Using Json.Net with Newtonsoft.Json
+View url
