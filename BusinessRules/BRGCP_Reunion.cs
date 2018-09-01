@@ -29,9 +29,30 @@ namespace BusinessRules
         {
             try
             {
-                var oList = new List<BEGCP_Reunion>();
-                
-                return (oList);
+                using (var odr = oda.GCP0023_ReunionRFC_LIST(oBe))
+                {
+                    var oList = new List<BEGCP_Reunion>();
+                    var iLst = oList;
+                    ((IList)iLst).LoadFromReader<BEGCP_Reunion>(odr);
+
+                    if (odr.NextResult())
+                    {
+                        var oListParticipante = new List<BEGCP_ReunionParticipante>();
+                        var iListParticipante = oListParticipante;
+                        ((IList)iListParticipante).LoadFromReader<BEGCP_ReunionParticipante>(odr);
+
+                        oList.ForEach(obj =>
+                        {
+                            oListParticipante.ForEach(objp=> {
+                                if (objp.reu_Codigo == obj.reu_Codigo)
+                                {
+                                    obj.ReunionParticipante.Add(objp);
+                                }
+                            });                            
+                        });
+                    }
+                    return (oList);
+                }
             }
             catch (Exception ex)
             {
@@ -42,11 +63,11 @@ namespace BusinessRules
         /// MANTENIMIENTO DE EVALUACIÓN DE RIESGO
         /// </summary>
         /// <param name="oBe"></param>
-        public BEGCP_Reunion GCP0023_ReunionRFC(BEGCP_Reunion oBe)
+        public void GCP0023_ReunionRFC(BEGCP_Reunion oBe)
         {
             try
             {
-                return oda.GCP0023_ReunionRFC(oBe);
+                oda.GCP0023_ReunionRFC(oBe);
             }
             catch (Exception ex)
             {

@@ -29,35 +29,15 @@ namespace DataAccess
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
-        public List<BEGCP_Reunion> GCP0023_ReunionRFC_LIST(BEGCP_Reunion oBe)
+        public IDataReader GCP0023_ReunionRFC_LIST(BEGCP_Reunion oBe)
         {
             try
             {
                 if (ocn.State == ConnectionState.Closed) ocn.Open();
-                var ocmd = odb.GetStoredProcCommand("GCP0023_ReunionRFC_LIST", oBe.rfc_Codigo);
+                var ocmd = odb.GetStoredProcCommand("GCP0023_ReunionRFC_LIST",oBe.rfc_Codigo);
                 ocmd.CommandTimeout = 2000;
                 var odr = odb.ExecuteReader(ocmd);
-                
-                var oList = new List<BEGCP_Reunion>();
-                var iLst = oList;
-                ((IList)iLst).LoadFromReader<BEGCP_Reunion>(odr);
-
-                //Detalle Reunión Participantes
-                DbCommand cmdo;
-                oList.ForEach(obj =>
-                {
-                    cmdo = odb.GetStoredProcCommand("GCP0023_ReunionParticipanteRFC_LIST", obj.reu_Codigo);
-                    cmdo.CommandTimeout = 2000;
-                    var odrD = odb.ExecuteReader(cmdo);
-
-                    var oListD = new List<BEGCP_ReunionParticipante>();
-                    var iLstD = oListD;
-                    ((IList)iLstD).LoadFromReader<BEGCP_ReunionParticipante>(odrD);
-
-                    obj.ReunionParticipante = oListD;
-                });
-
-                return (oList);
+                return (odr);
             }
             catch (Exception ex)
             {
@@ -72,7 +52,7 @@ namespace DataAccess
         /// MANTENIMIENTO DE REUNIONES DEL PROYECTO
         /// </summary>
         /// <param name="oBe"></param>
-        public BEGCP_Reunion GCP0023_ReunionRFC(BEGCP_Reunion oBe)
+        public void GCP0023_ReunionRFC(BEGCP_Reunion oBe)
         {
             if (ocn.State == ConnectionState.Closed) ocn.Open();
             BEGCP_Reunion _be = new BEGCP_Reunion();
@@ -80,12 +60,13 @@ namespace DataAccess
             {
                 try
                 {
-                    using (var ocmd = odb.GetStoredProcCommand("GCP0023_ReunionRFC", oBe.acci,
+                    using (var ocmd = odb.GetStoredProcCommand("GCP0023_ReunionRFC", 
                         oBe.rfc_Codigo,
                         oBe.reu_FechaReunion,
                         oBe.reu_HoraReunion,
                         oBe.reu_Lugar,
-                        oBe.reu_Comentario))
+                        oBe.reu_Comentario,
+                        oBe.reu_Codigo))
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
@@ -95,8 +76,9 @@ namespace DataAccess
                         DbCommand cmdo;
                         oBe.ReunionParticipante.ForEach(obj =>
                         {
-                            cmdo = odb.GetStoredProcCommand("GCP0023_ReunionParticipanteRFC", oBe.reu_Codigo,
-                                obj.rfc_Codigo,
+                            cmdo = odb.GetStoredProcCommand("GCP0024_ReunionParticipanteRFC", 
+                                oBe.reu_Codigo,
+                                oBe.rfc_Codigo,
                                 obj.per_Codigo);
                             cmdo.CommandTimeout = 2000;
                             odb.ExecuteNonQuery(cmdo, obts);
@@ -116,7 +98,6 @@ namespace DataAccess
                     ocn.Close();
                 }
             }
-            return _be;
         }
     }
 }

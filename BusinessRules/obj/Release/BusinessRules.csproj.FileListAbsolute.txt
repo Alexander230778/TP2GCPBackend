@@ -22,3 +22,15 @@ C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.csprojResolveAs
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\BusinessRules.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\BusinessRules.pdb
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\BusinessEntities.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\DataAccess.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\BusinessEntities.pdb
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Release\DataAccess.pdb
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.csprojResolveAssemblyReference.cache
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.pdb

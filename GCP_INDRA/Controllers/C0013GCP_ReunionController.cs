@@ -37,17 +37,27 @@ namespace GCP_INDRA.Controllers
         [EnableCors(origins: "*", headers: "*", methods: "POST")]
         public HttpResponseMessage GCP0023_ReunionRFC(BEGCP_Reunion oBe)
         {
+            var oBeR = new BEResponseReunion();
             try
             {
                 var oBr = new BRGCP_Reunion();
                 oBe.acci = 1;
                 var _be = new BEGCP_Reunion();
-                _be = oBr.GCP0023_ReunionRFC(oBe);
-
-                return Request.CreateResponse(HttpStatusCode.OK, _be);
+                oBr.GCP0023_ReunionRFC(oBe);
+                var oList = oBr.GCP0023_ReunionRFC_LIST(oBe);
+                oBeR.success = true;
+                oList.ForEach(obj=> {
+                    if (obj.reu_Codigo == oBe.reu_Codigo)
+                    {
+                        oBeR.data = obj;
+                    }
+                });
+                return Request.CreateResponse(HttpStatusCode.OK, oBeR);
             }
             catch (Exception ex)
             {
+                oBeR.success = false;
+                oBeR.data = new BEGCP_Reunion();
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
