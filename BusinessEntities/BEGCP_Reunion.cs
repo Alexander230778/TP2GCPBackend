@@ -12,7 +12,7 @@ namespace BusinessEntities
         {
             ReunionParticipante = new List<BEGCP_ReunionParticipante>();
         }
-
+        public int key { get; set; }
         public int acci { get; set; }
         public int reu_Codigo { get; set; }
         public int rfc_Codigo { get; set; }

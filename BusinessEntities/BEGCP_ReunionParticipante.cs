@@ -8,6 +8,7 @@ namespace BusinessEntities
 {
     public class BEGCP_ReunionParticipante
     {
+        public int key { get; set; }
         public int reu_Codigo { get; set; }
         public int rfc_Codigo { get; set; }
         public int per_Codigo { get; set; }
