@@ -85,6 +85,41 @@ namespace DataAccess
                     ocn.Close();
                 }
             }
+        }        
+        /// <summary>
+        /// MANTENIMIENTO DE REQUERIMIENTO
+        /// </summary>
+        /// <param name="oBe"></param>
+        public void GCPGR_Requerimiento(BEGR_Requerimiento oBe)
+        {
+            if (ocn.State == ConnectionState.Closed) ocn.Open();
+            using (var obts = ocn.BeginTransaction())
+            {
+                try
+                {
+                    using (var ocmd = odb.GetStoredProcCommand("GCPGR_Requerimiento", 
+                                                                                    oBe.lir_Codigo,
+                                                                                    oBe.lir_Aprobado,
+                                                                                    oBe.pri_Prioridad,
+                                                                                    oBe.lir_Dias,
+                                                                                    oBe.pri_Prioridad,
+                                                                                    oBe.lir_CostoFinal))
+                    {
+                        ocmd.CommandTimeout = 2000;
+                        odb.ExecuteNonQuery(ocmd, obts);
+                        obts.Commit();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    obts.Rollback();
+                    throw new Exception(ex.Message);
+                }
+                finally
+                {
+                    ocn.Close();
+                }
+            }
         }
     }
 }

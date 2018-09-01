@@ -25,6 +25,16 @@ namespace BusinessEntities
         public string est_Estado { get; set; }
         public int lir_Prioridad { get; set; }
         public List<BEGCP9_Recurso> LST_RECU { get; set; }
+        public int est_Codigo { get; set; }
+        public int lir_Dias { get; set; }
+        public string pri_Prioridad { get; set; }
+        public decimal lir_CostoInicial { get; set; }
+        public decimal lir_CostoAsignado { get; set; }
+        public bool lir_Aprobado { get; set; }
+        public int lir_Esfuerzo { get; set; }
+        public string lir_Desde { get; set; }
+        public string lir_Hasta { get; set; }
+        public decimal lir_CostoFinal { get; set; }
         public int acci { get; set; }
     }
     public class requerimentRequest

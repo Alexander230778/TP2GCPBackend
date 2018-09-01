@@ -60,5 +60,20 @@ namespace BusinessRules
                 throw new Exception(ex.Message);
             }
         }
+        /// <summary>
+        /// MANTENIMIENTO DE REQUERIMIENTOS EVALUADOS
+        /// </summary>
+        /// <param name="oBe"></param>
+        public void GCPGR_Requerimiento(BEGR_Requerimiento oBe)
+        {
+            try
+            {
+                oda.GCPGR_Requerimiento(oBe);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

@@ -126,5 +126,84 @@ namespace GCP_INDRA.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+        /// <summary>
+        /// LISTA DE REQUERIMIENTOS
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("EvaluarRequerimientos/{rfc_Codigo}")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCP0002_GR_Requerimiento_LIST_0003(int rfc_Codigo)
+        {
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+                var oBe = new BEGR_Requerimiento();
+                oBe.rfc_Codigo = rfc_Codigo;
+                oBe.acci = 3;
+
+                var oList = oBr.GCP0002_GR_Requerimiento_LIST(oBe);
+
+                return Request.CreateResponse(HttpStatusCode.OK, oList);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        /// <summary>
+        /// OBTENER LA LISTA DE REQUERIMIENTOS
+        /// </summary>
+        /// <param name="rfc_Codigo"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("PlanificarRequerimientos/{rfc_Codigo}")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCP0002_GR_Requerimiento_LIST_0004(int rfc_Codigo)
+        {
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+                var oBe = new BEGR_Requerimiento();
+                oBe.rfc_Codigo = rfc_Codigo;
+                oBe.acci = 4;
+
+                var oList = oBr.GCP0002_GR_Requerimiento_LIST(oBe);
+
+                return Request.CreateResponse(HttpStatusCode.OK, oList);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        /// <summary>
+        /// INSERTAR DATOS DE REQUERIMIENTO
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("RequerimientoPlanificado")]
+        [EnableCors(origins: "*", headers: "*", methods: "POST")]
+        public HttpResponseMessage GCPGR_Requerimiento(BEGR_Requerimiento oBe)
+        {
+            var oBeResponse = new requirementResponse();
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+
+                oBr.GCPGR_Requerimiento(oBe);
+
+                oBeResponse.success = true;
+                oBeResponse.message = "";
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+            catch (Exception ex)
+            {
+                oBeResponse.success = false;
+                oBeResponse.message = ex.Message;
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+        }
     }
 }
