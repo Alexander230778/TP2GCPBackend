@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace BusinessEntities
 {
@@ -16,7 +12,7 @@ namespace BusinessEntities
         public int acci { get; set; }
         public int reu_Codigo { get; set; }
         public int rfc_Codigo { get; set; }
-        public string  reu_FechaReunion { get; set; }
+        public string reu_FechaReunion { get; set; }
         public string reu_HoraReunion { get; set; }
         public string reu_Lugar { get; set; }
         public string reu_Comentario { get; set; }

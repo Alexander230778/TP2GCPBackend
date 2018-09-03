@@ -6,68 +6,68 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>E:\WEBPUBLISH</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\UPC\TP2\TP2GCPBackend_PUBLISH</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>04/21/2018 14:08:39</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>04/21/2018 14:08:39</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/BusinessEntities.dll">
-      <publishTime>09/01/2018 17:00:34</publishTime>
+      <publishTime>09/02/2018 21:22:45</publishTime>
     </File>
     <File Include="bin/BusinessRules.dll">
-      <publishTime>09/01/2018 17:00:35</publishTime>
+      <publishTime>09/02/2018 21:22:46</publishTime>
     </File>
     <File Include="bin/DataAccess.dll">
-      <publishTime>09/01/2018 17:00:35</publishTime>
+      <publishTime>09/02/2018 21:22:46</publishTime>
     </File>
     <File Include="bin/GCP_INDRA.dll">
-      <publishTime>09/01/2018 17:00:35</publishTime>
+      <publishTime>09/02/2018 21:22:47</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:43:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:43:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.ObjectBuilder2.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:43:00</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:43:00</publishTime>
     </File>
     <File Include="bin/ResultSetMappers.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:42:59</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:43:00</publishTime>
     </File>
     <File Include="bin/System.Web.Cors.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:42:59</publishTime>
     </File>
     <File Include="bin/System.Web.Http.Cors.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:43:00</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:43:00</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:43:00</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>08/30/2018 17:21:16</publishTime>
+      <publishTime>08/25/2018 23:42:59</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>08/30/2018 17:22:07</publishTime>
+      <publishTime>08/25/2018 23:42:59</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>04/21/2018 14:08:37</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/01/2018 11:26:06</publishTime>
+      <publishTime>09/02/2018 20:57:59</publishTime>
     </File>
   </ItemGroup>
 </Project>

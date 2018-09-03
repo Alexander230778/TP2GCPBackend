@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BusinessEntities;
 using Microsoft.Practices.EnterpriseLibrary.Data;
 using System.Data.Common;
 using System.Data;
-using ResultSetMappers;
+using BusinessEntities;
 
 namespace DataAccess
 {
@@ -25,7 +19,7 @@ namespace DataAccess
             ocn = odb.CreateConnection();
         }
         /// <summary>
-        /// OBTENER LA LISTA DE REUNIONES DEL PROYECTO
+        /// OBTENER LA LISTA DE REUNIONES DEL RFC
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
@@ -49,7 +43,7 @@ namespace DataAccess
             }
         }
         /// <summary>
-        /// MANTENIMIENTO DE REUNIONES DEL PROYECTO
+        /// MANTENIMIENTO DE REUNIONES DEL RFC
         /// </summary>
         /// <param name="oBe"></param>
         public void GCP0023_ReunionRFC(BEGCP_Reunion oBe)

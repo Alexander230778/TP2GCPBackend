@@ -1,12 +1,9 @@
-﻿using BusinessEntities;
-using DataAccess;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ResultSetMappers;
+using BusinessEntities;
+using DataAccess;
 
 namespace BusinessRules
 {
@@ -21,7 +18,7 @@ namespace BusinessRules
             oda = new DAGCP_Reunion();
         }
         /// <summary>
-        /// OBTENER LA LISTA DE REQUERIMIENTOS DEL PROYECTO
+        /// OBTENER LA LISTA DE REUNIONES DEL RFC
         /// </summary>
         /// <param name="oBe"></param>
         /// <returns></returns>
@@ -60,7 +57,7 @@ namespace BusinessRules
             }
         }
         /// <summary>
-        /// MANTENIMIENTO DE EVALUACIÓN DE RIESGO
+        /// MANTENIMIENTO DE REUNIONES DEL RFC
         /// </summary>
         /// <param name="oBe"></param>
         public void GCP0023_ReunionRFC(BEGCP_Reunion oBe)

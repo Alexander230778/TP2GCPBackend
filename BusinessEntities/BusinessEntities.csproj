@@ -48,6 +48,7 @@
     <Compile Include="BEGCP_Beneficio.cs" />
     <Compile Include="BEGCP_EstadoRiesgo.cs" />
     <Compile Include="BEGCP_EvaluacionRiesgo.cs" />
+    <Compile Include="BEGCP_GestionarRiesgo.cs" />
     <Compile Include="BEGCP_ImpactoRiesgo.cs" />
     <Compile Include="BEGCP_Persona.cs" />
     <Compile Include="BEGCP_PrioridadRiesgo.cs" />
