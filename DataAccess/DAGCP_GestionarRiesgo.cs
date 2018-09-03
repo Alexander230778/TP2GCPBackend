@@ -28,7 +28,7 @@ namespace DataAccess
             try
             {
                 if (ocn.State == ConnectionState.Closed) ocn.Open();
-                var ocmd = odb.GetStoredProcCommand("GCP0025_GestionarRiesgo_LIST", oBe.rfc_Codigo);
+                var ocmd = odb.GetStoredProcCommand("GCP0025_GestionarRiesgo_LIST", oBe.esr_Codigo);
                 ocmd.CommandTimeout = 2000;
                 var odr = odb.ExecuteReader(ocmd);
                 return (odr);
