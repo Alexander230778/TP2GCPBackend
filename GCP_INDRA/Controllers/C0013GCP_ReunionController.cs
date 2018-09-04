@@ -1,17 +1,21 @@
-﻿using BusinessEntities;
-using BusinessRules;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using BusinessEntities;
+using BusinessRules;
 
 namespace GCP_INDRA.Controllers
 {
     public class C0013GCP_ReunionController : ApiController
     {
+        /// <summary>
+        /// OBTENER LA LISTA DE REUNIONES DEL RFC
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("Reunion/{id}")]
         [EnableCors(origins: "*", headers: "*", methods: "GET")]
@@ -32,6 +36,11 @@ namespace GCP_INDRA.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+        /// <summary>
+        /// INSERTAR DATOS DE REUNIONES DEL RFC
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("Reunion")]
         [EnableCors(origins: "*", headers: "*", methods: "POST")]

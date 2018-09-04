@@ -23,18 +23,6 @@ D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessRules\bin\Debug\DataAccess.pdb
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessRules\obj\Debug\BusinessRules.csprojResolveAssemblyReference.cache
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessRules\obj\Debug\BusinessRules.dll
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessRules\obj\Debug\BusinessRules.pdb
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessRules.dll
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessRules.pdb
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessEntities.dll
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\DataAccess.dll
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessEntities.pdb
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\DataAccess.pdb
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.csprojResolveAssemblyReference.cache
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.dll
-C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.pdb
 E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Debug\BusinessRules.dll
 E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Debug\BusinessRules.pdb
 E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Debug\BusinessEntities.dll
@@ -47,3 +35,15 @@ E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\bin\Debug\DataAccess.pdb
 E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.csprojResolveAssemblyReference.cache
 E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.dll
 E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.pdb
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessRules.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessRules.pdb
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessEntities.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\DataAccess.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\BusinessEntities.pdb
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Debug\DataAccess.pdb
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.csprojResolveAssemblyReference.cache
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.dll
+C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Debug\BusinessRules.pdb

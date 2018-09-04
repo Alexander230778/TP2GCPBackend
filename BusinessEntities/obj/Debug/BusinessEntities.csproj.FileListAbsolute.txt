@@ -8,12 +8,16 @@ D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\bin\Debug\BusinessEntit
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Debug\BusinessEntities.dll
 D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Debug\BusinessEntities.pdb
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.pdb
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.dll
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.pdb
+<<<<<<< HEAD
+=======
+E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\bin\Debug\BusinessEntities.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\obj\Debug\BusinessEntities.pdb
+>>>>>>> 1e4d14b8b14bf0ae0a0f1b79ee40ea3bcffbc0c4
