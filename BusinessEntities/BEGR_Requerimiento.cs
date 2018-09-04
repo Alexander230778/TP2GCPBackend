@@ -35,6 +35,7 @@ namespace BusinessEntities
         public string lir_Desde { get; set; }
         public string lir_Hasta { get; set; }
         public decimal lir_CostoFinal { get; set; }
+        public string lir_ImpactoRiesgo { get; set; }
         public int acci { get; set; }
     }
     public class requerimentRequest
