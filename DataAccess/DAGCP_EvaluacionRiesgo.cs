@@ -66,7 +66,9 @@ namespace DataAccess
                         oBe.esr_Codigo,
                         oBe.evr_Informe,
                         oBe.imp_Codigo,
-                        oBe.evr_Adjunto))
+                        oBe.evr_Adjunto,
+                        oBe.evr_LineaBase,
+                        oBe.evr_Presupuesto))
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
