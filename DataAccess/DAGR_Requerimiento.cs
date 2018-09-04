@@ -121,6 +121,10 @@ namespace DataAccess
                 }
             }
         }
+        /// <summary>
+        /// GUARDAR EL REQUERIMIENTO PLANIFICADO
+        /// </summary>
+        /// <param name="oBe"></param>
         public void GCPGR_Requerimiento_planificar(BEGR_Requerimiento oBe)
         {
             if (ocn.State == ConnectionState.Closed) ocn.Open();
