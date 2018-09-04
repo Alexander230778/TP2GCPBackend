@@ -19,6 +19,8 @@ namespace BusinessEntities
         public int imp_Codigo { get; set; }
         public string evr_Adjunto { get; set; }
         public DateTime evr_FechaEnvio { get; set; }
-        public DateTime evr_FechaRespuesta { get; set; } 
+        public DateTime evr_FechaRespuesta { get; set; }
+        public bool evr_LineaBase { get; set; }
+        public bool evr_Presupuesto { get; set; }
     }
 }
