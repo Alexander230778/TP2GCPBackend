@@ -84,20 +84,40 @@ namespace GCP_INDRA.Controllers
         /// <param name="oBe"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("Requerimiento/Update")]
+        [Route("Requerimiento/update")]
         [EnableCors(origins: "*", headers: "*", methods: "POST")]
-        public HttpResponseMessage GCP0011_GR_Requerimiento_0002(BEGR_Requerimiento oBe)
+        public HttpResponseMessage GCP0011_GR_Requerimiento_0002(requerimentRequest oBe)
         {
+            var oBeResponse = new requirementResponse();
             try
             {
                 var oBr = new BRGR_Requerimiento();
-                oBe.acci = 2;
-                oBr.GCP0011_GR_Requerimiento(oBe);
-                return Request.CreateResponse(HttpStatusCode.OK, "OK");
+                var oBeSend = new BEGR_Requerimiento();
+                oBeSend.acci = 2;
+
+                oBeSend.lir_Codigo = oBe.lir_Codigo;
+                oBeSend.lir_Nombre = oBe.title;
+                oBeSend.lir_FechaEntrega = oBe.delivery;
+                oBeSend.lir_Resumen = oBe.description;
+                oBeSend.lir_Prioridad = oBe.prioridad;
+                oBeSend.lir_EsFuncional = oBe.isFunctional;
+                oBeSend.lir_RequiereDocumentar = oBe.requireDocumentation;
+                oBeSend.rfc_Codigo = oBe.rfc_Codigo;
+
+                oBr.GCP0011_GR_Requerimiento(oBeSend);
+
+                oBeSend.key = oBeSend.lir_Codigo;
+
+                oBeResponse.success = true;
+                oBeResponse.data = oBeSend;
+                oBeResponse.message = "";
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
             }
             catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+                oBeResponse.success = false;
+                oBeResponse.message = ex.Message;
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
             }
         }
         /// <summary>

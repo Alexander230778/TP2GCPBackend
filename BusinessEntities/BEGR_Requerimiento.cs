@@ -40,6 +40,7 @@ namespace BusinessEntities
     }
     public class requerimentRequest
     {
+        public int lir_Codigo { get; set; }
         public string title { get; set; }
         public string delivery { get; set; }
         public string description { get; set; }
