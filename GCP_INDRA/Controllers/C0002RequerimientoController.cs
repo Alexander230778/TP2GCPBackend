@@ -225,5 +225,28 @@ namespace GCP_INDRA.Controllers
                 return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
             }
         }
+        [HttpPost]
+        [Route("RequerimientoPLanificar/update")]
+        [EnableCors(origins: "*", headers: "*", methods: "POST")]
+        public HttpResponseMessage GCPGR_Requerimiento_planificar(BEGR_Requerimiento oBe)
+        {
+            var oBeResponse = new requirementResponse();
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+
+                oBr.GCPGR_Requerimiento_planificar(oBe);
+
+                oBeResponse.success = true;
+                oBeResponse.message = "";
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+            catch (Exception ex)
+            {
+                oBeResponse.success = false;
+                oBeResponse.message = ex.Message;
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+        }
     }
 }

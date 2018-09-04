@@ -75,5 +75,16 @@ namespace BusinessRules
                 throw new Exception(ex.Message);
             }
         }
+        public void GCPGR_Requerimiento_planificar(BEGR_Requerimiento oBe)
+        {
+            try
+            {
+                oda.GCPGR_Requerimiento_planificar(oBe);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

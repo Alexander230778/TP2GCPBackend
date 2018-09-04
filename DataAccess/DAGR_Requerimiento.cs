@@ -85,7 +85,7 @@ namespace DataAccess
                     ocn.Close();
                 }
             }
-        }        
+        }
         /// <summary>
         /// MANTENIMIENTO DE REQUERIMIENTO
         /// </summary>
@@ -97,13 +97,41 @@ namespace DataAccess
             {
                 try
                 {
-                    using (var ocmd = odb.GetStoredProcCommand("GCPGR_Requerimiento", 
+                    using (var ocmd = odb.GetStoredProcCommand("GCPGR_Requerimiento",
                                                                                     oBe.lir_Codigo,
                                                                                     oBe.lir_Aprobado,
                                                                                     oBe.lir_ImpactoRiesgo,
                                                                                     oBe.lir_Dias,
                                                                                     oBe.pri_Prioridad,
                                                                                     oBe.lir_CostoAsignado))
+                    {
+                        ocmd.CommandTimeout = 2000;
+                        odb.ExecuteNonQuery(ocmd, obts);
+                        obts.Commit();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    obts.Rollback();
+                    throw new Exception(ex.Message);
+                }
+                finally
+                {
+                    ocn.Close();
+                }
+            }
+        }
+        public void GCPGR_Requerimiento_planificar(BEGR_Requerimiento oBe)
+        {
+            if (ocn.State == ConnectionState.Closed) ocn.Open();
+            using (var obts = ocn.BeginTransaction())
+            {
+                try
+                {
+                    using (var ocmd = odb.GetStoredProcCommand("GCPGR_Requerimiento_planificar",
+                                                                                    oBe.lir_Codigo,
+                                                                                    oBe.lir_Esfuerzo,
+                                                                                    oBe.lir_Desde))
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
