@@ -16,6 +16,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/BusinessEntities.dll">
+<<<<<<< HEAD
+      <publishTime>09/01/2018 17:27:20</publishTime>
+    </File>
+    <File Include="bin/BusinessRules.dll">
+      <publishTime>09/01/2018 17:45:10</publishTime>
+    </File>
+    <File Include="bin/DataAccess.dll">
+      <publishTime>09/01/2018 17:45:10</publishTime>
+    </File>
+    <File Include="bin/GCP_INDRA.dll">
+      <publishTime>09/01/2018 17:45:10</publishTime>
+=======
       <publishTime>09/02/2018 21:22:45</publishTime>
     </File>
     <File Include="bin/BusinessRules.dll">
@@ -26,6 +38,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/GCP_INDRA.dll">
       <publishTime>09/02/2018 21:51:02</publishTime>
+>>>>>>> 1e4d14b8b14bf0ae0a0f1b79ee40ea3bcffbc0c4
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
       <publishTime>08/25/2018 23:43:00</publishTime>

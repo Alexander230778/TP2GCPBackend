@@ -100,10 +100,10 @@ namespace DataAccess
                     using (var ocmd = odb.GetStoredProcCommand("GCPGR_Requerimiento", 
                                                                                     oBe.lir_Codigo,
                                                                                     oBe.lir_Aprobado,
-                                                                                    oBe.pri_Prioridad,
+                                                                                    oBe.lir_ImpactoRiesgo,
                                                                                     oBe.lir_Dias,
                                                                                     oBe.pri_Prioridad,
-                                                                                    oBe.lir_CostoFinal))
+                                                                                    oBe.lir_CostoAsignado))
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
