@@ -47,7 +47,7 @@ namespace DataAccess
             }
         }
         /// <summary>
-        /// OPERACIONES DE MANTANIMIENTO
+        /// OPERACIONES DE MANTENIMIENTO
         /// </summary>
         /// <param name="oBe"></param>
         public void GCP0006_RFC(BEGCP01_RFC oBe)
@@ -71,6 +71,39 @@ namespace DataAccess
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
                         oBe.rfc_Codigo = Convert.ToInt32(odb.GetParameterValue(ocmd, "@rfc_Codigo"));
+
+                        obts.Commit();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    obts.Rollback();
+                    throw new Exception(ex.Message);
+                }
+                finally
+                {
+                    ocn.Close();
+                }
+            }
+        }
+        /// <summary>
+        /// RFC STATUS
+        /// </summary>
+        /// <param name="oBe"></param>
+        public void GCP0005_RFC_STATUS(BEGCP01_RFC oBe)
+        {
+            if (ocn.State == ConnectionState.Closed) ocn.Open();
+            using (var obts = ocn.BeginTransaction())
+            {
+                try
+                {
+                    using (var ocmd = odb.GetStoredProcCommand("GCP0005_RFC_STATUS", oBe.rfc_Codigo,
+                                                                                oBe.rfc_Estado,
+                                                                                oBe.rfc_SubEstado,
+                                                                                oBe.acci))
+                    {
+                        ocmd.CommandTimeout = 2000;
+                        odb.ExecuteNonQuery(ocmd, obts);
 
                         obts.Commit();
                     }

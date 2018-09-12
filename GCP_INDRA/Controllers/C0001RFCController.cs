@@ -112,6 +112,28 @@ namespace GCP_INDRA.Controllers
             }
         }
         /// <summary>
+        /// RFC STATUS
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("C0001S0005")]
+        [EnableCors(origins: "*", headers: "*", methods: "POST")]
+        public HttpResponseMessage GCP0005_RFC_STATUS(BEGCP01_RFC oBe)
+        {
+            try
+            {
+                var oBr = new BRGCP01_RFC();
+                oBe.acci = 1;
+                oBr.GCP0005_RFC_STATUS(oBe);
+                return Request.CreateResponse(HttpStatusCode.OK, "OK");
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        /// <summary>
         /// OBTENER UNA RFC PARA EDICIÓN
         /// </summary>
         /// <param name="oBe"></param>

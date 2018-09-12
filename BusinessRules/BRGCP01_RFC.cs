@@ -62,5 +62,20 @@ namespace BusinessRules
                 throw new Exception(ex.Message);
             }
         }
+        /// <summary>
+        /// RFC STATUS
+        /// </summary>
+        /// <param name="oBe"></param>
+        public void GCP0005_RFC_STATUS(BEGCP01_RFC oBe)
+        {
+            try
+            {
+                oda.GCP0005_RFC_STATUS(oBe);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

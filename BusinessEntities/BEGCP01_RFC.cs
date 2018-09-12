@@ -20,8 +20,8 @@ namespace BusinessEntities
         public string rfc_Asunto { get; set; }
         public string rfc_Descripcion { get; set; }
         public int pro_Codigo { get; set; }
-        public int per_Codigo { get; set; }
-        public int GCP13_EncargadosRFC_per_Codigo { get; set; }
+        public int per_Codigo { get; set; } //Solicitante
+        public int GCP13_EncargadosRFC_per_Codigo { get; set; } //Responsable
         public int est_Codigo { get; set; }
         public string est_Estado { get; set; }
         public string pro_Nombre { get; set; }
@@ -33,5 +33,7 @@ namespace BusinessEntities
         public List<BEGR_Requerimiento> LST_REQU { get; set; }
         public List<int> bene_codigos { get; set; }
         public int acci { get; set; }
+        public string rfc_Estado { get; set; }
+        public string rfc_SubEstado { get; set; }
     }
 }
