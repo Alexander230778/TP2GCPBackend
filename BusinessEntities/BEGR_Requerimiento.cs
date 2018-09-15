@@ -37,6 +37,12 @@ namespace BusinessEntities
         public decimal lir_CostoFinal { get; set; }
         public string lir_ImpactoRiesgo { get; set; }
         public int acci { get; set; }
+
+        //Datos para la bandeja de técnicos
+        public int lit_Codigo { get; set; }
+        public string pro_Nombre { get; set; }
+        public string rfc_Asunto { get; set; }
+        public int lir_TiempoDesarrollo { get; set; }
     }
     public class requerimentRequest
     {
@@ -48,6 +54,9 @@ namespace BusinessEntities
         public bool isFunctional { get; set; }
         public bool requireDocumentation { get; set; }
         public int rfc_Codigo { get; set; }
+        public int lit_Codigo { get; set; }
+        public int est_Codigo { get; set; }
+        public int lir_TiempoDesarrollo { get; set; }
     }
     public class requirementResponse
     {

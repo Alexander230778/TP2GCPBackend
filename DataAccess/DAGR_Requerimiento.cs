@@ -32,7 +32,7 @@ namespace DataAccess
             try
             {
                 if (ocn.State == ConnectionState.Closed) ocn.Open();
-                var ocmd = odb.GetStoredProcCommand("GCP0002_GR_Requerimiento_LIST",oBe.rfc_Codigo, oBe.lir_Codigo, oBe.acci);
+                var ocmd = odb.GetStoredProcCommand("GCP0002_GR_Requerimiento_LIST",oBe.rfc_Codigo, oBe.lir_Codigo, oBe.lit_Codigo, oBe.acci);
                 ocmd.CommandTimeout = 2000;
                 var odr = odb.ExecuteReader(ocmd);
                 return (odr);
@@ -65,6 +65,9 @@ namespace DataAccess
                                                                                             oBe.lir_RequiereDocumentar,
                                                                                             oBe.rfc_Codigo,
                                                                                             oBe.lir_Prioridad,
+                                                                                            oBe.lit_Codigo,
+                                                                                            oBe.est_Codigo,
+                                                                                            oBe.lir_TiempoDesarrollo,
                                                                                             oBe.acci))
                     {
                         ocmd.CommandTimeout = 2000;

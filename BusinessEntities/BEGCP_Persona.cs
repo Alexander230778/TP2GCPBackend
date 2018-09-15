@@ -15,5 +15,11 @@ namespace BusinessEntities
         public string text { get; set; }
         public string per_Cargo { get; set; }
         public int acci { get; set; }
+
+        //Roles
+        public int int_Codigo { get; set; }
+        public int enc_Codigo { get; set; }
+        public int lit_Codigo { get; set; }
+        public int par_Codigo { get; set; }
     }
 }
