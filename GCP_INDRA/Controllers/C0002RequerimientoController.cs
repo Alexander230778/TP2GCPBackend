@@ -356,6 +356,7 @@ namespace GCP_INDRA.Controllers
                 oBeSend.lir_Codigo = oBe.lir_Codigo;
                 oBeSend.est_Codigo = oBe.est_Codigo;
                 oBeSend.lir_TiempoDesarrollo = oBe.lir_TiempoDesarrollo;
+                oBeSend.RequerimientoRecurso = oBe.RequerimientoRecurso;
 
                 oBr.GCP0011_GR_Requerimiento(oBeSend);
 

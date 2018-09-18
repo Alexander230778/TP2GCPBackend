@@ -78,6 +78,21 @@ namespace DataAccess
                         oBe.lir_Codigo = Convert.ToInt32(odb.GetParameterValue(ocmd, "@lir_Codigo"));
                         oBe.lir_FechaEntrega = Convert.ToString(odb.GetParameterValue(ocmd, "@lir_FechaEntrega"));
 
+                        //Detalle Requerimiento Recurso
+                        DbCommand cmdo;
+                        oBe.RequerimientoRecurso.ForEach(obj =>
+                        {
+                            obj.acci = 1;
+                            cmdo = odb.GetStoredProcCommand("GCP0011_GCP_RequerimientoRecurso",
+                                oBe.lir_Codigo,
+                                obj.key,
+                                obj.ltr_tipo,
+                                obj.lrr_Cantidad,
+                                obj.acci);
+                            cmdo.CommandTimeout = 2000;
+                            odb.ExecuteNonQuery(cmdo, obts);
+                        });
+
                         obts.Commit();
                     }
                 }
