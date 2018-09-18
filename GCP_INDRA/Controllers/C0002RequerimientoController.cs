@@ -248,5 +248,130 @@ namespace GCP_INDRA.Controllers
                 return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
             }
         }
+        /// <summary>
+        /// OBTENER LISTA DE REQUERIMIENTOS PENDIENTES DE EVALUACION POR TECNICO
+        /// </summary>
+        /// <param name="rfc_Codigo"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("RequerimientoTecnicoPendiente/{lit_Codigo}")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCP0002_GR_Requerimiento_LIST_0005(int lit_Codigo)
+        {
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+                var oBe = new BEGR_Requerimiento();
+                oBe.lit_Codigo = lit_Codigo;
+                oBe.acci = 5;
+
+                var oList = oBr.GCP0002_GR_Requerimiento_LIST(oBe);
+
+                return Request.CreateResponse(HttpStatusCode.OK, oList);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        /// <summary>
+        /// OBTENER LISTA DE REQUERIMIENTOS POR TECNICO
+        /// </summary>
+        /// <param name="rfc_Codigo"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("RequerimientoTecnico/{lit_Codigo}")]
+        [EnableCors(origins: "*", headers: "*", methods: "GET")]
+        public HttpResponseMessage GCP0002_GR_Requerimiento_LIST_0006(int lit_Codigo)
+        {
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+                var oBe = new BEGR_Requerimiento();
+                oBe.lit_Codigo = lit_Codigo;
+                oBe.acci = 6;
+
+                var oList = oBr.GCP0002_GR_Requerimiento_LIST(oBe);
+
+                return Request.CreateResponse(HttpStatusCode.OK, oList);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        /// <summary>
+        /// ACTUALIZAR DATOS DE REQUERIMIENTO TECNICO
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("RequerimientoTecnico/update")]
+        [EnableCors(origins: "*", headers: "*", methods: "POST")]
+        public HttpResponseMessage GCP0011_GR_Requerimiento_0003(requerimentRequest oBe)
+        {
+            var oBeResponse = new requirementResponse();
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+                var oBeSend = new BEGR_Requerimiento();
+                oBeSend.acci = 3;
+
+                oBeSend.lir_Codigo = oBe.lir_Codigo;
+                oBeSend.lit_Codigo = oBe.lit_Codigo;
+
+                oBr.GCP0011_GR_Requerimiento(oBeSend);
+
+                oBeSend.key = oBeSend.lir_Codigo;
+
+                oBeResponse.success = true;
+                oBeResponse.data = oBeSend;
+                oBeResponse.message = "";
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+            catch (Exception ex)
+            {
+                oBeResponse.success = false;
+                oBeResponse.message = ex.Message;
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+        }
+        /// <summary>
+        /// ACTUALIZAR DATOS DE REQUERIMIENTO TECNICO EVALUAR
+        /// </summary>
+        /// <param name="oBe"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("RequerimientoTecnicoEvaluar/update")]
+        [EnableCors(origins: "*", headers: "*", methods: "POST")]
+        public HttpResponseMessage GCP0011_GR_Requerimiento_0004(requerimentRequest oBe)
+        {
+            var oBeResponse = new requirementResponse();
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+                var oBeSend = new BEGR_Requerimiento();
+                oBeSend.acci = 4;
+
+                oBeSend.lir_Codigo = oBe.lir_Codigo;
+                oBeSend.est_Codigo = oBe.est_Codigo;
+                oBeSend.lir_TiempoDesarrollo = oBe.lir_TiempoDesarrollo;
+
+                oBr.GCP0011_GR_Requerimiento(oBeSend);
+
+                oBeSend.key = oBeSend.lir_Codigo;
+
+                oBeResponse.success = true;
+                oBeResponse.data = oBeSend;
+                oBeResponse.message = "";
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+            catch (Exception ex)
+            {
+                oBeResponse.success = false;
+                oBeResponse.message = ex.Message;
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+        }
     }
 }
