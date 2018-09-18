@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -102,6 +103,8 @@
     <Compile Include="Controllers\C0011GCP_EvaluacionRiesgoController.cs" />
     <Compile Include="Controllers\C0013GCP_ReunionController.cs" />
     <Compile Include="Controllers\C0014GCP_GestionarRiesgoController.cs" />
+    <Compile Include="Controllers\C0015GCP_RRHHController.cs" />
+    <Compile Include="Controllers\C0016ResourceAddController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

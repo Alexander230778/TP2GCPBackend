@@ -81,7 +81,9 @@
     <Compile Include="DAGCP_PrioridadRiesgo.cs" />
     <Compile Include="DAGCP_Persona.cs" />
     <Compile Include="DAGCP_ImpactoRiesgo.cs" />
+    <Compile Include="DAGCP_RecursoAdicional.cs" />
     <Compile Include="DAGCP_Reunion.cs" />
+    <Compile Include="DAGCP_RRHH.cs" />
     <Compile Include="DAGPP_Portafolio.cs" />
     <Compile Include="DAGCP_TipoRecurso.cs" />
     <Compile Include="DAGenericInfoRequest.cs" />
