@@ -1,29 +1,3 @@
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\GCP_INDRA.dll.config
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\GCP_INDRA.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\GCP_INDRA.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\Newtonsoft.Json.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Net.Http.Formatting.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Web.Http.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Web.Http.WebHost.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\Newtonsoft.Json.xml
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Net.Http.Formatting.xml
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Web.Http.xml
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Web.Http.WebHost.xml
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\obj\Release\GCP_INDRA.csprojResolveAssemblyReference.cache
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\obj\Release\GCP_INDRA.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\obj\Release\GCP_INDRA.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Web.Cors.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Web.Http.Cors.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\System.Web.Http.Cors.xml
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\BusinessEntities.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\BusinessRules.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\DataAccess.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\ResultSetMappers.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\BusinessEntities.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\BusinessRules.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\GCP_INDRA\bin\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.dll.config
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.pdb
@@ -39,6 +13,7 @@ C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\DataAccess.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\ResultSetMappers.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\Microsoft.Practices.ObjectBuilder2.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\BusinessRules.pdb
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\Newtonsoft.Json.xml
@@ -50,31 +25,3 @@ C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.dll
 C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.pdb
-C:\UPC\TP2\TP2GCPBackend\GCP_INDRA\bin\Microsoft.Practices.ObjectBuilder2.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.dll.config
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\GCP_INDRA.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\BusinessEntities.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\BusinessRules.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\Newtonsoft.Json.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Net.Http.Formatting.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Web.Cors.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.Cors.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.WebHost.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\DataAccess.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\ResultSetMappers.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\Microsoft.Practices.ObjectBuilder2.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\BusinessEntities.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\BusinessRules.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\Newtonsoft.Json.xml
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Net.Http.Formatting.xml
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.xml
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.Cors.xml
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\System.Web.Http.WebHost.xml
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\bin\DataAccess.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.csprojResolveAssemblyReference.cache
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\GCP_INDRA\obj\Release\GCP_INDRA.pdb
