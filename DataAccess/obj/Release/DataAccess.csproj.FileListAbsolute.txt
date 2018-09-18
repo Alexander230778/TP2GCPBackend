@@ -1,17 +1,3 @@
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\DataAccess.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\DataAccess.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\BusinessEntities.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Release\BusinessEntities.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\obj\Release\DataAccess.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\obj\Release\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\DataAccess.dll
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\BusinessEntities.dll
@@ -22,23 +8,8 @@ C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLi
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
+C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\ResultSetMappers.dll
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Release\DataAccess.dll
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Release\DataAccess.pdb
-C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Release\ResultSetMappers.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\DataAccess.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\DataAccess.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\BusinessEntities.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\ResultSetMappers.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Release\BusinessEntities.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\obj\Release\DataAccess.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\obj\Release\DataAccess.pdb

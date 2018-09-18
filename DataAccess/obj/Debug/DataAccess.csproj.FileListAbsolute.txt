@@ -1,31 +1,3 @@
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\DataAccess.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\DataAccess.pdb
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\BusinessEntities.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\bin\Debug\BusinessEntities.pdb
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\obj\Debug\DataAccess.dll
-D:\UPC\Taller de proyectos 2\GCP_INDRA\DataAccess\obj\Debug\DataAccess.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\DataAccess.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\DataAccess.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\BusinessEntities.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\bin\Debug\BusinessEntities.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\obj\Debug\DataAccess.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\DataAccess\obj\Debug\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Debug\DataAccess.dll
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Debug\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Debug\BusinessEntities.dll
@@ -40,33 +12,3 @@ C:\UPC\TP2\TP2GCPBackend\DataAccess\bin\Debug\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.dll
 C:\UPC\TP2\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\DataAccess.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\DataAccess.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\BusinessEntities.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\bin\Debug\BusinessEntities.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.pdb
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\DataAccess.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\DataAccess.pdb
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\BusinessEntities.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\bin\Debug\BusinessEntities.pdb
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.dll
-D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\DataAccess\obj\Debug\DataAccess.pdb

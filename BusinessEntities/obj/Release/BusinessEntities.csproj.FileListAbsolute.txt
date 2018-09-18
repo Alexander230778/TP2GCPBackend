@@ -1,14 +1,4 @@
-D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\bin\Release\BusinessEntities.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\bin\Release\BusinessEntities.pdb
-D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Release\BusinessEntities.dll
-D:\UPC\Taller de proyectos 02\GCP_INDRA\BusinessEntities\obj\Release\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.pdb
-C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.csprojResolveAssemblyReference.cache
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.pdb
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.csprojResolveAssemblyReference.cache
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.dll
-E:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.pdb

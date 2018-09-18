@@ -11,6 +11,7 @@ namespace BusinessEntities
         public BEGR_Requerimiento()
         {
             LST_RECU = new List<BEGCP9_Recurso>();
+            RequerimientoRecurso = new List<GCP_RequerimientoRecurso>();
         }
         public int key { get; set; }
         public int lir_Codigo { get; set; }
@@ -43,9 +44,14 @@ namespace BusinessEntities
         public string pro_Nombre { get; set; }
         public string rfc_Asunto { get; set; }
         public int lir_TiempoDesarrollo { get; set; }
+        public List<GCP_RequerimientoRecurso> RequerimientoRecurso { get; set; }
     }
     public class requerimentRequest
     {
+        public requerimentRequest()
+        {
+            RequerimientoRecurso = new List<GCP_RequerimientoRecurso>();
+        }
         public int lir_Codigo { get; set; }
         public string title { get; set; }
         public string delivery { get; set; }
@@ -57,6 +63,7 @@ namespace BusinessEntities
         public int lit_Codigo { get; set; }
         public int est_Codigo { get; set; }
         public int lir_TiempoDesarrollo { get; set; }
+        public List<GCP_RequerimientoRecurso> RequerimientoRecurso { get; set; }
     }
     public class requirementResponse
     {
@@ -64,4 +71,13 @@ namespace BusinessEntities
         public BEGR_Requerimiento data { get; set; }
         public string message { get; set; }
     }
+    public class GCP_RequerimientoRecurso
+    {
+        public int lir_Codigo { get; set; }
+        public int key { get; set; }
+        public int ltr_tipo { get; set; }
+        public int lrr_Cantidad { get; set; }
+        public int acci { get; set; }
+    }
+
 }
