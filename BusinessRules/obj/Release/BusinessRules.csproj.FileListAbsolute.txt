@@ -10,3 +10,17 @@ C:\UPC\TP2\TP2GCPBackend\BusinessRules\bin\Release\DataAccess.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.csprojResolveAssemblyReference.cache
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.pdb
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\BusinessRules.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\BusinessRules.pdb
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\BusinessEntities.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\DataAccess.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\BusinessEntities.pdb
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\bin\Release\DataAccess.pdb
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.csprojAssemblyReference.cache
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.csproj.CoreCompileInputs.cache
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.csproj.CopyComplete
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessRules\obj\Release\BusinessRules.pdb

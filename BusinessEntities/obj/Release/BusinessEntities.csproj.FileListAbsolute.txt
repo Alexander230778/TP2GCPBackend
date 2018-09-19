@@ -2,3 +2,9 @@ C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.pdb
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.dll
 C:\UPC\TP2\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.pdb
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessEntities\bin\Release\BusinessEntities.pdb
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.csprojAssemblyReference.cache
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.csproj.CoreCompileInputs.cache
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.dll
+D:\C\UPC\TP2\TP3GCPBackend\TP2GCPBackend03\TP2GCPBackend\BusinessEntities\obj\Release\BusinessEntities.pdb

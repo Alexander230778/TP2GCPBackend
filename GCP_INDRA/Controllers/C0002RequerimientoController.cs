@@ -374,5 +374,28 @@ namespace GCP_INDRA.Controllers
                 return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
             }
         }
+        [HttpPost]
+        [Route("Requerimiento/Eliminar")]
+        [EnableCors(origins: "*", headers: "*", methods: "POST")]
+        public HttpResponseMessage GCPGR_Requerimiento_0002(BEGR_Requerimiento oBe)
+        {
+            var oBeResponse = new requirementResponse();
+            try
+            {
+                var oBr = new BRGR_Requerimiento();
+                oBe.acci = 2;
+                oBr.GCPGR_Requerimiento(oBe);
+
+                oBeResponse.success = true;
+                oBeResponse.message = "";
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+            catch (Exception ex)
+            {
+                oBeResponse.success = false;
+                oBeResponse.message = ex.Message;
+                return Request.CreateResponse(HttpStatusCode.OK, oBeResponse);
+            }
+        }
     }
 }

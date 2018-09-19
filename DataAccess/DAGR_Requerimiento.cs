@@ -124,7 +124,8 @@ namespace DataAccess
                                                                                     oBe.lir_ImpactoRiesgo,
                                                                                     oBe.lir_Dias,
                                                                                     oBe.pri_Prioridad,
-                                                                                    oBe.lir_CostoAsignado))
+                                                                                    oBe.lir_CostoAsignado,
+                                                                                    oBe.acci))
                     {
                         ocmd.CommandTimeout = 2000;
                         odb.ExecuteNonQuery(ocmd, obts);
